@@ -1,0 +1,6 @@
+print("Question: 2+2")
+print("a: 4")
+print("b: 3")
+print("c: 5")
+print("d: 6")
+print("correct answer 4")

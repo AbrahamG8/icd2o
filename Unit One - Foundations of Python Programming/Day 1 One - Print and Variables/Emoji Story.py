@@ -1,0 +1,1 @@
+print("Once there was a ⌚ and he was very 🔊 and never got 😪 so they took him back to 🍎 and he got 🛠️")

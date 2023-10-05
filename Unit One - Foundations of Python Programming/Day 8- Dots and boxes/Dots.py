@@ -48,9 +48,9 @@ opponent_points2 = "32"
 box_percentage2 = "11.1%"
 
 Opponent_game3 = "Arees"
-your_points3 ="34"
-opponent_points3 = "2"
-box_percentage3 = "94.4%"
+your_points3 ="2"
+opponent_points3 = "34"
+box_percentage3 = "5.5%"
 
 Opponent_game4 = "Brandon"
 your_points4 ="13"
@@ -58,9 +58,9 @@ opponent_points4 = "23"
 box_percentage4 = "36.1%"
 
 Opponent_game5 = "Keaton"
-your_points5 ="10"
-opponent_points5 = "26"
-box_percentage5 = "27.8%"
+your_points5 ="26"
+opponent_points5 = "10"
+box_percentage5 = "72.2%"
 print("----------------------------------------------------------------------------")
 print(f"{'Opponent':<10} {'Your points':>10} {'Opponent Points' :>10} {'Box Percentage':<20}")
 print(f"{Opponent_game1:<10} {your_points1:>10} {opponent_points1:>10} {box_percentage1:>20}")

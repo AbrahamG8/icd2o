@@ -33,37 +33,33 @@ print (f"{name}'s results: ")
 
 print("Game #1: ")
 print(f"Opponents Name: {Opponent_name1}")
-print("Your points: 17 ")
-print("Opponents Points: 19 ")
-print(f"Who won game 1: {name}")
+print(f"Your points: {game_one}")
+print(f"Opponents Points: {opponent_r_one} ")
 
 
 print("Game #2: ")
 print(f"Opponents Name: {Opponent_name2}")
-print("Your points: 4 ")
-print("Opponents Points: 32 ")
-print(f"Who won game 2: {Opponent_name2} ")
+print(f"Your points: {game_two} ")
+print(f"Opponents Points: {opponent_r_two} ")
 
 
 print("Game #3: ")
 print(f"Opponents Name: {Opponent_name3}")
-print("Your points: 34 ")
-print("Opponents Points: 2 ")
-print(f"Who won game 3: {Opponent_name3}")
+print(f"Your points: {game_three} ")
+print(f"Opponents Points: {opponent_r_three} ")
 
 
 print("Game #4: ")
 print(f"Opponents Name: {Opponent_name4}")
-print("Your points: 13 ")
-print("Opponents Points: 23 ")
-print("Who won game 4:  ")
+print(f"Your points: {game_four} ")
+print(f"Opponents Points: {opponent_r_four} ")
+
 
 
 print("Game #5: ")
 print(f"Opponents Name: {Opponent_name5}")
-print("Your points: 13 ")
-print("Opponents Points: 23 ")
-print("Who won game 5:  ")
+print(f"Your points: {game_five} ")
+print(f"Opponents Points: {opponent_r_five} ")
 
 
 print("Dots and Boxes Table Tracker:")

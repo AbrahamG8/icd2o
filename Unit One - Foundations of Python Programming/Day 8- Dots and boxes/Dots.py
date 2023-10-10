@@ -1,77 +1,86 @@
 name = str(input("Enter your name:"))
+Opponent_name1 = "Alex"
+Opponent_name2 = "Ishaan"
+Opponent_name3 = "Arees"
+Opponent_name4 = "Brandon"
+Opponent_name5 = "Keaton"
 
-print("Game #1:")
-print("Opponents name: Alex lee")
-print("Your points: 17")
-print("Opponents points: 19")
+your_total = int(input("Enter total here: "))
+opponents_total = int(input("Enter opponents total here: "))
+overall = your_total + opponents_total
+game_one = int(input("Input your game one points here: "))
+game_two = int(input("Input your game two points here: "))
+game_three = int(input("Input your game three points here: "))
+game_four = int(input("Input your game four points here: "))
+game_five = int(input("Input your game five points here"))
 
+opponent_r_five = int(input("Input opponents game five points here"))
+opponent_r_four = int(input("Input opponents game four points here: "))
+opponent_r_three = int(input("Input opponents game three points here: "))
+opponent_r_two = int(input("Input opponents game two points here: "))
+opponent_r_one = int(input("Input opponents game one points here: "))
 
+box_percentage1 = int(game_one/36)
+box_percentage2 = int(game_two/36)
+box_percentage3 = int(game_three/36)
+box_percentage4 = int(game_four/36)
+box_percentage5 = int(game_five/36)
 
-print("Game #2:")
-print("Opponents name:Ishaan")
-print("Your points: 4")
-print("Opponents points:32")
-
-
-
-print("Game #3:")
-print("Opponents name: Arees")
-print("Your points: 34")
-print("Opponents points: 2")
-
-
-
-print("Game #4:")
-print("Opponents name: Brandon")
-print("Your points: 13")
-print("Opponents points: 23")
-
-
-
-print("Game #5:")
-print("Opponents name: Keaton")
-print("Your points: 10")
-print("Opponents points: 26")
-
-print("Dots and boxes Score Tracker")
-
-print("Player name: Abraham")
-
-Opponent_game1 = "Alex lee"
-your_points1 = "17"
-opponent_points1 = "19"
-box_percentage1 = "47.2%"
-
-Opponent_game2 = "Ishaan"
-your_points2 = "4"
-opponent_points2 = "32"
-box_percentage2 = "11.1%"
-
-Opponent_game3 = "Arees"
-your_points3 ="2"
-opponent_points3 = "34"
-box_percentage3 = "5.5%"
-
-Opponent_game4 = "Brandon"
-your_points4 ="13"
-opponent_points4 = "23"
-box_percentage4 = "36.1%"
-
-Opponent_game5 = "Keaton"
-your_points5 ="26"
-opponent_points5 = "10"
-box_percentage5 = "72.2%"
-print("----------------------------------------------------------------------------")
-print(f"{'Opponent':<10} {'Your points':>10} {'Opponent Points' :>10} {'Box Percentage':<20}")
-print(f"{Opponent_game1:<10} {your_points1:>10} {opponent_points1:>10} {box_percentage1:>20}")
-print(f"{Opponent_game2:<10} {your_points2:>10} {opponent_points2:>10} {box_percentage2:>20}")
-print(f"{Opponent_game3:<10} {your_points3:>10} {opponent_points3:>10} {box_percentage3:>20}")
-print(f"{Opponent_game4:<10} {your_points4:>10} {opponent_points4:>10} {box_percentage4:>20}")
-print(f"{Opponent_game5:<18} {your_points5:<10} {opponent_points5:<10} {box_percentage5:^20}")
-print("----------------------------------------------------------------------------")
+ 
 
 
-print("Summary:")
-print("Total points: 78")
-print("Total opponents points: 102")
-print("Percentage points Recieved: 43.32%")
+print (f"{name}'s results: ")
+
+print("Game #1: ")
+print(f"Opponents Name: {Opponent_name1}")
+print("Your points: 17 ")
+print("Opponents Points: 19 ")
+print(f"Who won game 1: {name}")
+
+
+print("Game #2: ")
+print(f"Opponents Name: {Opponent_name2}")
+print("Your points: 4 ")
+print("Opponents Points: 32 ")
+print(f"Who won game 2: {Opponent_name2} ")
+
+
+print("Game #3: ")
+print(f"Opponents Name: {Opponent_name3}")
+print("Your points: 34 ")
+print("Opponents Points: 2 ")
+print(f"Who won game 3: {Opponent_name3}")
+
+
+print("Game #4: ")
+print(f"Opponents Name: {Opponent_name4}")
+print("Your points: 13 ")
+print("Opponents Points: 23 ")
+print("Who won game 4:  ")
+
+
+print("Game #5: ")
+print(f"Opponents Name: {Opponent_name5}")
+print("Your points: 13 ")
+print("Opponents Points: 23 ")
+print("Who won game 5:  ")
+
+
+print("Dots and Boxes Table Tracker:")
+
+print(f"Player Name: {name}")
+
+print("Opponent         Your Points          Opponents Points                    Total ")
+print("------------------------------------------------------------------------")
+print(f"{Opponent_name1} {game_one:>22} {opponent_r_one:>23} {box_percentage1:>22.2%}")
+print(f"{Opponent_name2} {game_two:>22} {opponent_r_two:<23} {box_percentage2:>19.2%}")
+print(f"{Opponent_name3} {game_three:>22} {opponent_r_three:>19} {box_percentage3:>16.2%}")
+print(f"{Opponent_name4} {game_four:>22} {opponent_r_four:>21} {box_percentage4:>22.2%}")
+print(f"{Opponent_name5} {game_five:>22} {opponent_r_five:>16} {box_percentage5:>22.2%}")
+print("------------------------------------------------------------------------")
+
+
+print("Summary: ")
+print(f"Your Total Points: {your_total}")
+print(f"Total Opponent Points: {opponents_total}")
+print(f"Total Points: {overall}")

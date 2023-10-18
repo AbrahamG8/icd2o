@@ -167,40 +167,40 @@ S = str(input("Please enter a string:"))
 
 
 #HW3
-x = float(input("Please eneter a float number"))
-y = float(input("Please eneter a float number"))
-z = float(input("Please eneter a float number"))
+x = float(input("Please enter a float number"))
+y = float(input("Please enter a float number"))
+z = float(input("Please enter a float number"))
 
-average = average_of_three_floats (x,y,z)
+average = average_of_three_floats(x,y,z)
 
 print(f"The average is {average:.2f}.")
 
 # Hw4
-S_1 = str(input("Please enter a string: "))
-S_2 = str(input("Please eneter a string: "))
+s_1 = str(input("Please enter a string: "))
+s_2 = str(input("Please eneter a string: "))
 
-concatentate = concatenate_strings
+concatentate = concatenate_strings(s_1, s_2)
 
 print(f"The concatenated string is {concatentate}")
 
 # HW5
 length = int(input("Please give me the side length of a cube:"))
 
-volume = volume_of_cube
+volume = volume_of_cube (length)
 
 print(f"The volume of a cube is {volume:.2f} cm cubed.")
 
 # Hw6
 numb = int(input("Please enter a number: "))
 
-pos_neg_equal = check_number_status
+pos_neg_equal = check_number_status (numb)
 
 print(f"The number is {pos_neg_equal}")
 
 # Hw7
 radius = int(input("Please eneter the radius of a circle:"))
 
-circum = circumference_of_circle
+circum = circumference_of_circle (radius)
 
 print(f"The circumference of the circle is {circum:.2f} units")
 
@@ -216,7 +216,7 @@ print(f"The character {char} occurs X times in a string.")
 number = str(input("Please enter a number: "))
 percentage = str(input("Please eneter a percentage: "))
 
-calc_percentage = calculate_percentage
+calc_percentage = calculate_percentage (number, percentage)
 
 print(f"{percentage} percentage of the number is {calc_percentage}")
 
@@ -224,6 +224,6 @@ print(f"{percentage} percentage of the number is {calc_percentage}")
 x = int(input("Please enter a number:"))
 y = int(input("Please enter a number:"))
 
-difference = absolute_difference
+difference = absolute_difference (x, y)
 
 print(f"The absolute difference is {difference:.2f}")

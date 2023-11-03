@@ -18,9 +18,9 @@ def display_table(bug1, count1, bug2, count2, bug3, count3):
     total = count1 + count2 + count3
     print("Bug Type     Count   Percentage")
     print("---------------------------------")
-    print(f"{bug1}{count1:>16}{calculate_percent(total, count1):>12.2f}%")
-    print(f"{bug2}{count2:>16}{calculate_percent(total, count2):>12.2f}%")
-    print(f"{bug3}{count3:>16}{calculate_percent(total, count3):>12.2f}%")
+    print(f"{bug1}{count1:>20}{calculate_percent(total, count1):>12.2f}%")
+    print(f"{bug2}{count2:>20}{calculate_percent(total, count2):>12.2f}%")
+    print(f"{bug3}{count3:>20}{calculate_percent(total, count3):>12.2f}%")
     print("---------------------------------")
     print("Bug Type      Count       100% ")
 

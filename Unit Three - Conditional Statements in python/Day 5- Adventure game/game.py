@@ -40,15 +40,15 @@ def create_character():
 # Task 2 (introduction of the game)
 def game_intro(character_name, character_class):
     print("Welcome, " + character_name + ", the " + character_class + "!")
-    print("You find yourself in the mystical realm of Elsdocia, a world full of magic and life.")
-    print("You are about to venture off into the world. Your journey begins now!")
+    print("You find yourself in the middle of a jungle.")
+    print("Your journey begins now!")
    
     if character_class == "Mage":
-        print("Spells: Fireball - 30-60 Damage / Gear: Novice Wand")
+        print("Spells: Fireball - 30-80 Damage / Gear: Novice Wand")
     elif character_class == "Warrior":
-        print("Attacks: Sword Throw - 20-80 Damage / Gear: Longsword")
+        print("Attacks: Sword Throw - 20-90 Damage / Gear: Longsword")
     elif character_class == "Mr. Miyagi":
-        print("Attacks: Japanese Kung Fu - 40-50 Damage")
+        print("Attacks: Japanese Kung Fu - 40-80 Damage")
  
 # Task 3 (first decision in the adventure)
 def make_decision():
@@ -63,9 +63,9 @@ def make_decision():
 # Task 4 (encountering something function)
 def encounter_scenario(direction):
     if direction == 'walk':
-        print("The people don't recognise you, they attack you and startle the king. Get ready for a battle!")
+        print("The monkeys don't recognise you, they attack you and startle the monkey king. Get ready for a battle!")
     else:
-        print("The people of Elsdocia think you're an intruder! Get ready for a battle against the king!")
+        print("The hostile monkeys of the jungle think you're an intruder! Get ready for a battle against the monkey king!")
  
 # Task 5 (health management system)
 def manage_health(current_health, damage_taken):
@@ -85,7 +85,7 @@ def bonus_points():
     king_bonus = input("Did you defeat the king? (yes/no): ")
     if king_bonus == 'yes':
         bonus_points += 25
-        print("You've earned 25 bonus points for defeating the king of Elsdocia!")    
+        print("You've earned 25 bonus points for defeating the monkey king!")    
    
     creative_bonus = input("Did you come up with a creative solution during the encounter? (yes/no): ")
     if creative_bonus == 'yes':
@@ -103,23 +103,23 @@ def attack_king(current_health, king_health, character_class):
  
     if character_class == "Mage":
         attack_type = "Fireball"
-        player_damage = random.randint(30, 60)
+        player_damage = random.randint(30, 80)
     elif character_class == "Warrior":
         attack_type = "Sword Throw"
-        player_damage = random.randint(20, 80)
+        player_damage = random.randint(20, 90)
     elif character_class == "Mr. Miyagi":
         attack_type = "Japanese Kung Fu"
-        player_damage = random.randint(40, 50)
+        player_damage = random.randint(40, 80)
    
     king_damage = random.randint(10, 50)
  
     if player_damage > 0:
         king_health -= player_damage
-        print(f"You dealt {player_damage} damage to the king using {attack_type}. The king's remaining health: {king_health}")
+        print(f"You dealt {player_damage} damage to the monkey king using {attack_type}. The king's remaining health: {king_health}")
  
         king_defeated = king_health <= 0
         if king_defeated:
-            print("Congratulations! You defeated the king of Elsdocia!")
+            print("Congratulations! You defeated the monkey king!")
             king_health = 0
         else:
             attack_again = input("The king is still standing! Do you want to attack again or retreat? (attack/retreat): ")
@@ -135,7 +135,7 @@ def attack_king(current_health, king_health, character_class):
  
                 king_defeated = king_health <= 0
                 if king_defeated:
-                    print("Congratulations! You defeated the king of Elsdocia!")
+                    print("Congratulations! You defeated the monkey king!")
                     king_health = 0
                 else:
                     attack_type = second_attack_type
@@ -188,7 +188,7 @@ def play_game():
         print(f"Final Health: {current_health}")
     print(f"King's Remaining Health: {king_health}")
     print(f"King Defeated: {king_defeated}")
-    print(f"Total Damage Dealt to the King using {attack_type}: {player_damage}")
+    print(f"Total Damage Dealt to the monkey king using {attack_type}: {player_damage}")
     print(f"Bonus Points: {bonus}")
  
 if __name__ == "__main__": # checks if Python script is being run as the main program

@@ -12,17 +12,19 @@ pygame.display.set_caption("Tree Drawing")
 WHITE = (255, 255, 255)
 BROWN = (139, 69, 19)
 GREEN = (0, 128, 0)
+YELLOW = (255,199,44)
+RED = (218,41,28)
 # Main loop
 while True:
     screen.fill(WHITE)  # Fill the screen with white color
     
     # Draw the trunk (rectangle)
-    pygame.draw.rect(screen, BROWN, (180, 250, 40, 100))  # (x, y, width, height)
+    pygame.draw.rect(screen, RED, (180, 250, 40, 100))  # (x, y, width, height)
     
     # Draw the leaves (triangle)
-    pygame.draw.polygon(screen, GREEN, [(100, 250), (200, 100), (300, 250)])
-    pygame.draw.polygon(screen, GREEN, [(120, 200), (200, 50), (280, 200)])
-    pygame.draw.polygon(screen, GREEN, [(140, 150), (200, 20), (260, 150)])
+    pygame.draw.polygon(screen, YELLOW, [(100, 250), (200, 100), (300, 250)])
+    pygame.draw.polygon(screen, YELLOW, [(120, 200), (200, 50), (280, 200)])
+    pygame.draw.polygon(screen, YELLOW, [(140, 150), (200, 20), (260, 150)])
     
     # Update the display
     pygame.display.flip()
